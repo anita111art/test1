@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../css/style-tour.css">
+        <title>Костромская слобода</title>
+        <link rel="icon" href="../svg/logo.svg">
+        <meta name = "author" content = "Anita Arikhina">
+        <meta name = "description" content = "Онлайн экскурсия по Костромской слободе">
+        <meta name="keywords" content="музей Костромы, зодчество, экскурсия, аудиогид, Костромской государственный историко-архитектурный и художественный музей-заповедни">
+        <meta name="application-name" content="Костромская слобода">
+        <meta name="theme-color" content="#2F4836">
+    </head>
+    <body>
+        <header>
+            <img src="../svg/logo.svg" alt="logo">
+            <nav>
+                <ul id="menu">
+                    <li><a href="../index.html">Главная</a></li>
+                    <li><a class="activ" href="tour.html">Экскурсия</a></li>
+                    <li><a href="map.html">Карта</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>3 место: Дом крестьянина-гончара Ципелёва</h1><div>
+            <img src="../png/30.webp" alt="Обложка"></div>
+            <p class="center">Выберете прослушать или прочитать экскурсию</p>
+            <div>
+                <a onclick = "FuncText()">Текст</a>
+                <a onclick = "FuncAudio()">Аудиозапись</a>
+                <a id="hide" onclick = "FuncHide()">скрыть ✖</a>
+            </div>
+            <div id="audio">
+                <audio id="player" controls>
+                    <source src="../audio/3.mp3" type="audio/mpeg">
+                    <source src="../audio/3.ogg" type="audio/ogg">
+                    У вашего браузера нет возможности воспроизвести аудио 
+                </audio>
+                <div class="photo">
+                    <a onclick = "FuncImg1()">1</a>
+                    <a onclick = "FuncImg2()">2</a>
+                    <a onclick = "FuncImg3()">3</a>
+                </div>
+                <figure id="img1">
+                    <img src="../png/31.webp" alt="Вход в дом">
+                    <figcaption>Вход в дом</figcaption>  
+                </figure>
+                <figure id="img2">
+                    <img src="../png/32.webp" alt="Внутреннее убранство">
+                    <figcaption>Внутреннее убранство</figcaption>  
+                </figure>
+                <figure id="img3">
+                    <img src="../png/33.webp" alt="Примеры глиняной посуды">
+                    <figcaption>Примеры глиняной посуды</figcaption>  
+                </figure>
+            </div>
+            <div id="text">
+                <p>Дом крестьянина-гончара Ципелёва из д. Аристиха Шарьинского района Костромской области, середина XIX века, срублен самим хозяином из столетней сосны. Под одной крышей, на одной оси, расположены зимняя изба, летняя горница и соединяющий их «мост» (сени), все на высоком подклете. Сбоку пристроен большой двухъярусный двор с хлевами для скота. Кровля традиционная — два слоя желоблённого тёса с берестяной прокладкой, закреплённые на жердях и брёвнах фронтона.
+                    </p>
+                <figure>
+                    <img src="../png/31.webp" alt="Вход в дом">
+                    <figcaption>Вход в дом</figcaption> <hr> 
+                </figure>
+                <p>
+            Изба просторная, печь топилась «по белому» через кирпичную трубу. Интерьер типичен для костромских крестьян: красный угол (сутки) напротив печи, широкие лавки вдоль стен, стол со скамейкой у божницы, отделённая воронцом середа (женский кут), а у входа под полатями — мужской кут для работы взрослых мужчин. Особое внимание привлекают мощные венцы сруба, половицы из старого дерева и массивная матица, поддерживающая потолок.</p>
+                <figure>
+                    <img src="../png/32.webp" alt="Внутреннее убранство">
+                    <figcaption>Внутреннее убранство</figcaption><hr>  
+                </figure>
+                <p>
+            Дом стоял в лесном районе с развитым ремесленным хозяйством — рогожным, кузнечным, лапотным и гончарным. Хозяин занимался гончарным ремеслом, что отражено в экспозиции избы. В мужском куте расположены ручной гончарный круг, деревянная ёмкость для замеса глины и лохань с водой — основные места производства посуды. На полках сушится готовая посуда, а в середе стоит корыто с корчагой, которую гончар обваривал мучнистым раствором и укреплял, вращая и охлопывая берёзовым или кленовым веником.</p>
+                <figure>
+                    <img src="../png/33.webp" alt="Примеры глиняной посуды">
+                    <figcaption>Примеры глиняной посуды</figcaption><hr>  
+                </figure>
+            </div>
+            <div class="navigation">
+                <a href="tour2.html">← вернуться</a>
+            </div>
+        </main>
+        <footer>
+            <p class="foot">ОГБУК «Костромской государственный историко-архитектурный и художественный музей-заповедник»</p>
+            <div>
+            <p>© 2025 Все права защищены.</p>
+                <a href="https://vk.com/sloboda44">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-label="VK" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%"/>
+                    <path fill="#2F4836" d="M274 363c5-1 14-3 14-15 0 0-1-30 13-34s32 29 51 42c14 9 25 8 25 8l51-1s26-2 14-23c-1-2-9-15-39-42-31-30-26-25 11-76 23-31 33-50 30-57-4-7-20-6-20-6h-57c-6 0-9 1-12 6 0 0-9 25-21 45-25 43-35 45-40 42-9-5-7-24-7-37 0-45 7-61-13-65-13-2-59-4-73 3-7 4-11 11-8 12 3 0 12 1 17 7 8 13 9 75-2 81-15 11-53-62-62-86-2-6-5-7-12-9H79c-6 0-15 1-11 13 27 56 83 193 184 192z"/>
+                </svg>
+                </a>
+            </div>
+        </footer>
+        <script>
+            function FuncText() {
+                document.getElementById("text").style.display = "block";
+                document.getElementById("audio").style.display = "none";
+                document.getElementById("hide").style.display = "block";
+            }
+            function FuncAudio() {
+                document.getElementById("text").style.display = "none";
+                document.getElementById("audio").style.display = "block";
+                document.getElementById("hide").style.display = "block";
+            }
+            function FuncHide() {
+                document.getElementById("text").style.display = "none";
+                document.getElementById("audio").style.display = "none";
+                document.getElementById("hide").style.display = "none";
+            }
+            function FuncImg1() {
+                document.getElementById("img1").style.display = "block";
+                document.getElementById("img2").style.display = "none";
+                document.getElementById("img3").style.display = "none";
+            }
+            function FuncImg2() {
+                document.getElementById("img1").style.display = "none";
+                document.getElementById("img2").style.display = "block";
+                document.getElementById("img3").style.display = "none";
+            }
+            function FuncImg3() {
+                document.getElementById("img1").style.display = "none";
+                document.getElementById("img2").style.display = "none";
+                document.getElementById("img3").style.display = "block";
+            }
+        </script>
+    </body>
+</html>

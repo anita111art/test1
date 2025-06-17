@@ -1,0 +1,16 @@
+{
+  "name": "Костромская слобода",
+  "short_name": "Слобода",
+  "start_url": "https://anita111art.github.io/test1/",
+  "display": "standalone",
+  "background_color": "#2F4836",
+  "description": "Онлайн экскурсия по Костромской слободе",
+  "theme_color": "#2F4836",
+  "icons": [
+    {
+      "src": "png/logo512.png",
+      "sizes": "512X512",
+      "type": "image/png"
+    }
+  ]
+}

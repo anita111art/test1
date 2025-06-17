@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../css/style-tour.css">
+        <title>Костромская слобода</title>
+        <link rel="icon" href="../svg/logo.svg">
+        <meta name = "author" content = "Anita Arikhina">
+        <meta name = "description" content = "Онлайн экскурсия по Костромской слободе">
+        <meta name="keywords" content="музей Костромы, зодчество, экскурсия, аудиогид, Костромской государственный историко-архитектурный и художественный музей-заповедни">
+        <meta name="application-name" content="Костромская слобода">
+        <meta name="theme-color" content="#2F4836">
+    </head>
+    <body>
+        <header>
+            <img src="../svg/logo.svg" alt="logo">
+            <nav>
+                <ul id="menu">
+                    <li><a href="../index.html">Главная</a></li>
+                    <li><a class="activ" href="tour.html">Экскурсия</a></li>
+                    <li><a href="map.html">Карта</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>1 место: Дом Чапыгиной (дом крестьянина бедняка)</h1><div>
+            <img src="../png/10.webp" alt="Обложка"></div>
+            <p class="center">Выберете прослушать или прочитать экскурсию</p>
+            <div>
+                <a onclick = "FuncText()">Текст</a>
+                <a onclick = "FuncAudio()">Аудиозапись</a>
+                <a id="hide" onclick = "FuncHide()">скрыть ✖</a>
+            </div>
+            <div id="audio">
+                <audio id="player" controls>
+                    <source src="../audio/1.mp3" type="audio/mpeg">
+                    <source src="../audio/1.ogg" type="audio/ogg">
+                    У вашего браузера нет возможности воспроизвести аудио 
+                </audio>
+                <div class="photo">
+                    <a onclick = "FuncImg1()">1</a>
+                    <a onclick = "FuncImg2()">2</a>
+                </div>
+                <figure id="img1">
+                    <img src="../png/11.webp" alt="Стрелка рек Волги и Костромы">
+                    <figcaption>Стрелка рек Волги и Костромы</figcaption>  
+                </figure>
+                <figure id="img2">
+                    <img src="../png/12.webp" alt="Ипатьевский монастыр">
+                    <figcaption>Ипатьевский монастыр</figcaption>  
+                </figure>
+            </div>
+            <div id="text">
+                <p>Дом Е.П. Чапыгиной из д. Большое Андрейково (конец XIX — начало XX века) — небольшая изба бедняцкой крестьянской семьи. Построена из тонких еловых и осиновых брёвен, что нетипично для жилых домов, с тесовой крышей вместо прежней соломенной.
+                    </p>
+                <figure>
+                    <img src="../png/11.webp" alt="Стрелка рек Волги и Костромы">
+                    <figcaption>Архивное фото</figcaption> <hr> 
+                </figure>
+                <p>
+             Из-за дефицита хорошего леса бедняки использовали подлесок. Крыша с длинным левым скатом прикрывает хозяйственный двор для коз или овец. Жилая часть включает тесную избу и маленькую неотапливаемую горенку, разделённые «мостом», ведущим к скотному двору с воротами спереди и калиткой сзади. Возможно, дом раньше был покрыт лёгкой штукатуркой для защиты от морозов.</p>
+                <figure>
+                    <img src="../png/12.webp" alt="Ипатьевский монастыр">
+                    <figcaption>Дом сейчас</figcaption><hr>  
+                </figure>
+            </div>
+            <div class="navigation">
+                <a href="tour.html">← вернуться</a>
+                <a href="tour2.html">дальше →</a>
+            </div>
+        </main>
+        <footer>
+            <p class="foot">ОГБУК «Костромской государственный историко-архитектурный и художественный музей-заповедник»</p>
+            <div>
+            <p>© 2025 Все права защищены.</p>
+                <a href="https://vk.com/sloboda44">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-label="VK" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%"/>
+                    <path fill="#2F4836" d="M274 363c5-1 14-3 14-15 0 0-1-30 13-34s32 29 51 42c14 9 25 8 25 8l51-1s26-2 14-23c-1-2-9-15-39-42-31-30-26-25 11-76 23-31 33-50 30-57-4-7-20-6-20-6h-57c-6 0-9 1-12 6 0 0-9 25-21 45-25 43-35 45-40 42-9-5-7-24-7-37 0-45 7-61-13-65-13-2-59-4-73 3-7 4-11 11-8 12 3 0 12 1 17 7 8 13 9 75-2 81-15 11-53-62-62-86-2-6-5-7-12-9H79c-6 0-15 1-11 13 27 56 83 193 184 192z"/>
+                </svg>
+                </a>
+            </div>
+        </footer>
+        <script>
+            function FuncText() {
+                document.getElementById("text").style.display = "block";
+                document.getElementById("audio").style.display = "none";
+                document.getElementById("hide").style.display = "block";
+            }
+            function FuncAudio() {
+                document.getElementById("text").style.display = "none";
+                document.getElementById("audio").style.display = "block";
+                document.getElementById("hide").style.display = "block";
+            }
+            function FuncHide() {
+                document.getElementById("text").style.display = "none";
+                document.getElementById("audio").style.display = "none";
+                document.getElementById("hide").style.display = "none";
+            }
+            function FuncImg1() {
+                document.getElementById("img1").style.display = "block";
+                document.getElementById("img2").style.display = "none";
+                document.getElementById("img3").style.display = "none";
+            }
+            function FuncImg2() {
+                document.getElementById("img1").style.display = "none";
+                document.getElementById("img2").style.display = "block";
+                document.getElementById("img3").style.display = "none";
+            }
+            function FuncImg3() {
+                document.getElementById("img1").style.display = "none";
+                document.getElementById("img2").style.display = "none";
+                document.getElementById("img3").style.display = "block";
+            }
+        </script>
+    </body>
+</html>
